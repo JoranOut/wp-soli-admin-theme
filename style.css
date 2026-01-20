@@ -1,0 +1,133 @@
+/*
+Theme Name: Soli Admin Theme
+Theme URI: https://admin.soli.nl
+Author: Muziekvereniging Soli
+Author URI: https://soli.nl
+Description: Minimal administration theme for admin.soli.nl - provides authentication redirect and user dashboard.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: soli-admin-theme
+Domain Path: /languages
+*/
+
+/* ==========================================================================
+   Dashboard Styles
+   ========================================================================== */
+
+.soli-admin-dashboard {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+.soli-admin-dashboard h1 {
+    margin: 0 0 10px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.soli-admin-dashboard .soli-subtitle {
+    margin: 0 0 30px;
+    font-size: 1.1em;
+    color: #646970;
+}
+
+.soli-admin-dashboard .soli-user-info {
+    margin-bottom: 30px;
+}
+
+.soli-admin-dashboard .soli-user-field {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f6f7f7;
+    border-radius: 4px;
+}
+
+.soli-admin-dashboard .soli-user-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.soli-admin-dashboard .soli-user-field span {
+    display: block;
+    font-size: 1.1em;
+    color: #1d2327;
+}
+
+.soli-admin-dashboard .soli-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.soli-admin-dashboard .soli-actions a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.95em;
+    transition: background-color 0.2s ease;
+}
+
+.soli-admin-dashboard .soli-actions .soli-btn-primary {
+    background: #2271b1;
+    color: #fff;
+}
+
+.soli-admin-dashboard .soli-actions .soli-btn-primary:hover {
+    background: #135e96;
+}
+
+.soli-admin-dashboard .soli-actions .soli-btn-secondary {
+    background: #f6f7f7;
+    color: #2271b1;
+    border: 1px solid #2271b1;
+}
+
+.soli-admin-dashboard .soli-actions .soli-btn-secondary:hover {
+    background: #f0f0f1;
+}
+
+/* ==========================================================================
+   Login Page Customization
+   ========================================================================== */
+
+body.login {
+    background: #f0f0f1;
+}
+
+/* Hide the WordPress logo (the h1 containing the logo link) */
+.login h1:has(a) {
+    display: none;
+}
+
+/* Custom title styling */
+.login h1.soli-login-title {
+    margin: 0 0 8px;
+    font-size: 1.75em;
+    font-weight: 600;
+    color: #1d2327;
+    text-align: center;
+}
+
+.login .soli-login-subtitle {
+    margin: 0 0 20px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #646970;
+    text-align: center;
+}
