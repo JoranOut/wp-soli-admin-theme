@@ -5,6 +5,10 @@
   "author": "Muziekvereniging Soli",
   "license": "GPL-3.0-or-later",
   "scripts": {
+    "build": "npm run i18n:build",
+    "i18n:make-pot": "wp-env run cli -- bash -c 'php -d memory_limit=512M /usr/local/bin/wp i18n make-pot wp-content/themes/wp-soli-clean-theme wp-content/themes/wp-soli-clean-theme/languages/soli-clean-theme.pot --domain=soli-clean-theme --exclude=node_modules,test-results,playwright-report'",
+    "i18n:make-mo": "wp-env run cli -- bash -c 'php -d memory_limit=512M /usr/local/bin/wp i18n make-mo wp-content/themes/wp-soli-clean-theme/languages'",
+    "i18n:build": "npm run i18n:make-pot && npm run i18n:make-mo",
     "test:e2e": "wp-scripts test-playwright",
     "test:e2e:watch": "wp-scripts test-playwright --watch",
     "test:e2e:debug": "wp-scripts test-playwright --debug",
