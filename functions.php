@@ -285,10 +285,10 @@ function soli_admin_theme_github_updater(): void {
 	if ( class_exists( 'Soli\CleanTheme\WP_GitHub_Theme_Updater' ) ) {
 		$config = array(
 			'slug'         => 'wp-soli-clean-theme',
-			'api_url'      => 'https://api.github.com/repos/Muziekvereniging-Soli/wp-soli-clean-theme',
-			'raw_url'      => 'https://raw.github.com/Muziekvereniging-Soli/wp-soli-clean-theme/main',
-			'github_url'   => 'https://github.com/Muziekvereniging-Soli/wp-soli-clean-theme',
-			'zip_url'      => 'https://github.com/Muziekvereniging-Soli/wp-soli-clean-theme/releases/latest/download/wp-soli-clean-theme.zip',
+			'api_url'      => 'https://api.github.com/repos/JoranOut/wp-soli-clean-theme',
+			'raw_url'      => 'https://raw.githubusercontent.com/JoranOut/wp-soli-clean-theme/main',
+			'github_url'   => 'https://github.com/JoranOut/wp-soli-clean-theme',
+			'zip_url'      => 'https://github.com/JoranOut/wp-soli-clean-theme/releases/latest/download/wp-soli-clean-theme.zip',
 			'requires'     => '6.0.0',
 			'tested'       => '6.7.0',
 			'requires_php' => '8.0',
