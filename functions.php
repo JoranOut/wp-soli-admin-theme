@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
  *
  * @since 1.0.0
  */
-define( 'SOLI_CLEAN_THEME_VERSION', '1.0.1' );
+define( 'SOLI_CLEAN_THEME_VERSION', '1.0.2' );
 
 /**
  * Theme setup.
